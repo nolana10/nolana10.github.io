@@ -1,0 +1,154 @@
+body {
+  display: block;
+  font-family: "IntelClear", sans-serif;
+  background: #A5ACAF;
+}
+nav {
+  list-style-type: none;
+  display: inline;
+  background: #002C5F;
+  width: 100%;
+}
+nav ul {
+  background: #002C5F;
+  padding-left: 10px;
+  padding-top: 10px;
+  height: 30px;
+}
+nav ul li {
+  display: inline;
+  padding: 5px;
+}
+a:link {
+  text-decoration: none;
+  color: #69BE28;
+}
+a:hover {
+  color: white;
+}
+a:visited {
+  color: #818A8F;
+}
+header {
+  display: inline;
+  background: #818A8F;
+  padding-top: 20px;
+}
+header strong {
+  font-weight: bold;
+  font-size: 26px;
+}
+div {
+  display: flex;
+}
+h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+header img {
+  height: 100%;
+  width: 50%;
+}
+section {
+  display: flex;
+  margin-left: 150px;
+}
+section figure {
+  justify-content: space-around;
+  flex-direction: row;
+  margin-right: 100px;
+  padding-top: 20px;
+}
+section figure figcaption {
+  width: 250px;
+}
+header p {
+  padding-top: 20px;
+}
+.recommendations-mid {
+  margin: 0px;
+}
+.dashboard-mid, .questionnaire-mid {
+  margin-left: 0px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+#chartContainer {
+  margin-left: 0px;
+  display: block;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #002C5F;
+  height: 50px;
+  /*position: absolute;*/
+  bottom: 0px;
+  left: 0px;
+  text-align: center;
+  margin: 20px auto auto auto;
+  color: white;
+  width: 100%;
+}
+footer h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+/*.AboutImageContainer {
+  position: relative;
+  top: 100px;
+  padding: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 100%;
+}*/
+
+/* Fliping cards */
+.face img, .back img{
+  height: 202px;
+  width: 300px;
+}
+
+
+.flip-container {
+  position: relative;
+  margin: 10px auto;
+  /*height: 302px;
+  width: 400px;*/
+  z-index: 1;
+}
+.flip-container {
+  perspective: 1000;
+}
+.flipper {
+  /*height: 302px;
+  width: 400px;*/
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+  /*box-shadow: -5px 5px 5px #aaa;*/
+}
+.face {
+  position: absolute;
+  /*height: 302px;
+  width: 400px;*/
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}s
