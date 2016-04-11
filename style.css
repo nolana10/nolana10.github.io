@@ -65,26 +65,47 @@ section figure figcaption {
 header p {
   padding-top: 20px;
 }
+
+aside h3 a:link {
+  color: #002C5F;
+}
+
+aside h3 a:hover {
+  color: white;
+}
+
+.security-quest {
+    margin-bottom: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
 .recommendations-mid {
   margin: 0px;
 }
 .dashboard-mid, .questionnaire-mid {
   margin-left: 0px;
-  padding-top: 100px;
+  margin-top: 20px;
   padding-bottom: 50px;
   width: 100%;
 }
 
+.questionaire-mid ul li {
+  margin: 40px;
+}
 #chartContainer {
   margin-left: 0px;
   display: block;
 }
+
+footer, .push {
+      height: 50px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
   background: #002C5F;
-  height: 50px;
-  /*position: absolute;*/
   bottom: 0px;
   left: 0px;
   text-align: center;
@@ -98,17 +119,6 @@ footer h3 {
   font-size: 18px;
   padding-bottom: 10px;
 }
-
-/*.AboutImageContainer {
-  position: relative;
-  top: 100px;
-  padding: 50px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: row;
-  min-height: 100%;
-}*/
 
 /* Fliping cards */
 .face img, .back img{
